@@ -65,6 +65,9 @@ int main() {
                 printf("%d \n",i);
             }
             goto menu;
+        case 9:
+        printf("Cerrando...");
+        return 0;
     }
     
     return 0;
