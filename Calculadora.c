@@ -22,6 +22,7 @@ int main() {
     printf(" 1. Sumar\n 2. Restar\n 3. Multiplicar\n 4. Dividir\n 5. Potencia\n 6. Residuo");
     printf(" \n 7. Mayor, igual o menor\n 8. Imprimir numeros\n 9. Salir \n");
     scanf("%d",&op);
+    while(getchar() != '\n'); 
     switch (op){
         case 1:
             numeros(&a, &b);
@@ -68,6 +69,9 @@ int main() {
         case 9:
         printf("Cerrando...");
         return 0;
+        default:
+        printf("Opcion no valida, intente de nuevo \n");
+        goto menu;
     }
     
     return 0;
