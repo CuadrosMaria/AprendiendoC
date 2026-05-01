@@ -58,6 +58,13 @@ int main() {
                 printf("%.2f es igual a %.2f \n",a,b);
             }
             goto menu;
+        case 8:
+            numeros(&a, &b);
+            Reordenar(&a, &b);
+            for (int i =(int)b; i <= (int)a;i++){
+                printf("%d \n",i);
+            }
+            goto menu;
     }
     
     return 0;
