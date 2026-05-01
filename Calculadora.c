@@ -44,6 +44,10 @@ int main() {
             numeros(&a, &b);
             printf("La potencia %.2f de %.2f es de: %.2f \n",b,a,pow(a,b));
             goto menu;
+        case 6:
+            numeros(&a, &b);
+            printf("El residuo entre %.2f y %.2f es de: %.2f \n",a,b,fmod(a,b));
+            goto menu;
     }
     
     return 0;
