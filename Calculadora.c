@@ -20,5 +20,10 @@ int main() {
     printf(" 1. Sumar\n 2. Restar\n 3. Multiplicar\n 4. Dividir\n 5.Potencia\n 6.Residuo");
     printf(" \n 7. Mayor, igual o menor\n 8. Imprimir numeros\n 9. Salir \n");
     scanf("%d",&op);
+    switch (op){
+        case 1:
+            numeros(&a, &b);
+            printf("La suma entre %.2f y %.2f es de: %.2f",a,b,a+b);
+    }
     return 0;
 }
