@@ -14,5 +14,11 @@ void Reordenar(float *a, float*b){
     }
 }
 int main() {
+    float a, b;
+    int op;
+    printf("------------------Menu------------------\n");
+    printf(" 1. Sumar\n 2. Restar\n 3. Multiplicar\n 4. Dividir\n 5.Potencia\n 6.Residuo");
+    printf(" \n 7. Mayor, igual o menor\n 8. Imprimir numeros\n 9. Salir \n");
+    scanf("%d",&op);
     return 0;
 }
