@@ -48,6 +48,16 @@ int main() {
             numeros(&a, &b);
             printf("El residuo entre %.2f y %.2f es de: %.2f \n",a,b,fmod(a,b));
             goto menu;
+        case 7:
+            numeros(&a, &b);
+            if (a>b){
+                printf("%.2f es mayor que %.2f \n",a,b);
+            } else if (a<b){
+                printf("%.2f es menor que %.2f \n",a,b);
+            } else {
+                printf("%.2f es igual a %.2f \n",a,b);
+            }
+            goto menu;
     }
     
     return 0;
