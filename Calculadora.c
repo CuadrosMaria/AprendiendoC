@@ -7,7 +7,7 @@ void numeros (float *a, float*b){
 }
 void Reordenar(float *a, float*b){
     float aux;
-    if (*a>*b){
+    if (*a<*b){
         aux = *a;
         *a = *b;
         *b = aux;
@@ -16,6 +16,7 @@ void Reordenar(float *a, float*b){
 int main() {
     float a, b;
     int op;
+    menu:
     printf("------------------Menu------------------\n");
     printf(" 1. Sumar\n 2. Restar\n 3. Multiplicar\n 4. Dividir\n 5.Potencia\n 6.Residuo");
     printf(" \n 7. Mayor, igual o menor\n 8. Imprimir numeros\n 9. Salir \n");
@@ -23,7 +24,14 @@ int main() {
     switch (op){
         case 1:
             numeros(&a, &b);
-            printf("La suma entre %.2f y %.2f es de: %.2f",a,b,a+b);
+            printf("La suma entre %.2f y %.2f es de: %.2f \n",a,b,a+b);
+            goto menu;
+        case 2:
+            numeros(&a, &b);
+            Reordenar(&a, &b);
+            printf("La resta entre %.2f y %.2f es de: %.2f \n",a,b,a-b);
+            goto menu;
     }
+    
     return 0;
 }
