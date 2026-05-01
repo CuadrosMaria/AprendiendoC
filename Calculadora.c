@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 void numeros (float *a, float*b){
     printf("Ingrese el primer numero:");
     scanf("%f",a);
@@ -18,7 +19,7 @@ int main() {
     int op;
     menu:
     printf("------------------Menu------------------\n");
-    printf(" 1. Sumar\n 2. Restar\n 3. Multiplicar\n 4. Dividir\n 5.Potencia\n 6.Residuo");
+    printf(" 1. Sumar\n 2. Restar\n 3. Multiplicar\n 4. Dividir\n 5. Potencia\n 6. Residuo");
     printf(" \n 7. Mayor, igual o menor\n 8. Imprimir numeros\n 9. Salir \n");
     scanf("%d",&op);
     switch (op){
@@ -38,7 +39,11 @@ int main() {
         case 4:
             numeros(&a, &b);
             printf("La división entre %.2f y %.2f es de: %.2f \n",a,b,a/b);
-        goto menu;
+            goto menu;
+        case 5:
+            numeros(&a, &b);
+            printf("La potencia %.2f de %.2f es de: %.2f \n",b,a,pow(a,b));
+            goto menu;
     }
     
     return 0;
