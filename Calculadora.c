@@ -31,6 +31,14 @@ int main() {
             Reordenar(&a, &b);
             printf("La resta entre %.2f y %.2f es de: %.2f \n",a,b,a-b);
             goto menu;
+        case 3:
+            numeros(&a, &b);
+            printf("La multiplicación entre %.2f y %.2f es de: %.2f \n",a,b,a*b);
+            goto menu;
+        case 4:
+            numeros(&a, &b);
+            printf("La división entre %.2f y %.2f es de: %.2f \n",a,b,a/b);
+        goto menu;
     }
     
     return 0;
